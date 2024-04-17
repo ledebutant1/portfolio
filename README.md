@@ -1,1 +1,1 @@
-Ceci est un portfolio fait pour en cours
+Ceci est un portfolio fait pour un cours
