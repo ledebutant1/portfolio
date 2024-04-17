@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Portfolio de Dabernat Christian</title>
+    <style>
+        form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contactez-moi</h1>
+    </header>
+    <nav>
+        <a href="index.html">Acceuil</a>
+        <a href="Ma-formation.html">Ma formation</a>
+        <a href="a-propos-de-moi.html">A propos de moi</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <h2>Formulaire de contact</h2>
+        <form action="https://formspree.io/<dab3rnat.christian@gmail.com>" method="POST">
+            <label for="name">Nom:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+            <input type="submit" value="Envoyer">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Dabernat Christian</p>
+    </footer>
+</body>
+</html>
